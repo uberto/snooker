@@ -1,0 +1,20 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testRuntime "org.junit.platform:junit-platform-launcher:${junitLauncherVersion}"
+
+    testImplementation "io.strikt:strikt-core:${striktVersion}"
+}
